@@ -90,23 +90,34 @@
 .navbar-h1{
     color: white;
     font-family: 'Permanent Marker', cursive;
+    animation-name: bounce;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
 }
 
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
 
+    50% {
+        transform: translateY(15%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
 
 .navbar-h3{
     color: white;
 }
-
-
 
 ul{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-
 
 .urizon-li{
     padding: 15px 10px;
@@ -486,6 +497,11 @@ footer {
     color: #fff;
     text-align: center;
     font-family: 'poppins', sans-serif;
+    transition: .3s;
+}
+
+.footer-a:hover {
+    color: brown;
 }
 
 /* Reset */
