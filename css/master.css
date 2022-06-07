@@ -557,6 +557,7 @@ footer {
     border: 1px solid #fff;
     padding: 0.5rem;
     margin: 1rem;
+    transition: .5s;
 }
 
 .footer-li:hover {
